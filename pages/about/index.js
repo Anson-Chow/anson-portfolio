@@ -33,7 +33,6 @@ const figmaIcon = <FaFigma key="figma" />;
 const adobephotoshopIcon = <SiAdobephotoshop key="adobephotoshop" />;
 const fileExcelIcon = <FaFileExcel key="fileexcel" />;
 
-
 //  about data
 export const aboutData = [
   {
@@ -158,7 +157,7 @@ const About = () => {
             exit="hidden"
             className="max-w-[500px] mx-auto xl:mx-0 mb-6 xl:mb-12 px-2 xl:px-0"
           >
-            Embarking on the path of fullstack development, I've been on an
+            Embarking on the path of fullstack development, I&rsquo;ve been on an
             exciting journey over the past few years. From tutorial projects to
             building my own fullstack applications, my passion for coding
             continues to grow. Check out some of my projects!
@@ -249,7 +248,11 @@ const About = () => {
                   <div className="flex gap-x-4">
                     {/* icons */}
                     {item.icons?.map((icon, itemIndex) => {
-                      return <div className="text-2xl text-white" key={itemIndex}>{icon}</div>;
+                      return (
+                        <div className="text-2xl text-white" key={itemIndex}>
+                          {icon}
+                        </div>
+                      );
                     })}
                   </div>
                 </div>

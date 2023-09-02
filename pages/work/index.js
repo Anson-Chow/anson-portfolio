@@ -31,7 +31,7 @@ const Work = () => {
               exit="hidden"
               className="mb-4 max-w-[500px] mx-auto lg:mx-0"
             >
-              Welcome to my portfolio, where I've gathered a selection of my
+              Welcome to my portfolio, where I&rsquo;ve gathered a selection of my
               projects. Dive into the world of technology and design, and see
               the real-world results of my work.
             </motion.p>
