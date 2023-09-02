@@ -15,11 +15,12 @@ const Header = () => {
           {/* logo */}
           <Link href={'/'}>
             <Image
-              src={'/logo.svg'}
+              src={'/anson-logo.png'}
               width={220}
               height={48}
               alt=''
               priority={true}
+              className='pt-12'
             />
           </Link>
           {/* socials */}
