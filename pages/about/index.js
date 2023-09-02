@@ -20,6 +20,20 @@ import {
   SiAdobephotoshop,
 } from "react-icons/si";
 
+// Create instances of your icons with keys
+const html5Icon = <FaHtml5 key="html5" />;
+const css3Icon = <FaCss3 key="css3" />;
+const jsIcon = <FaJs key="js" />;
+const reactIcon = <FaReact key="react" />;
+const nextjsIcon = <SiNextdotjs key="nextjs" />;
+const nodeIcon = <FaNode key="node" />;
+const pythonIcon = <FaPython key="python" />;
+const framerIcon = <SiFramer key="framer" />;
+const figmaIcon = <FaFigma key="figma" />;
+const adobephotoshopIcon = <SiAdobephotoshop key="adobephotoshop" />;
+const fileExcelIcon = <FaFileExcel key="fileexcel" />;
+
+
 //  about data
 export const aboutData = [
   {
@@ -28,23 +42,23 @@ export const aboutData = [
       {
         title: "Web Development",
         icons: [
-          <FaHtml5 />,
-          <FaCss3 />,
-          <FaJs />,
-          <FaReact />,
-          <SiNextdotjs />,
-          <FaNode />,
-          <FaPython />,
-          <SiFramer />,
+          html5Icon,
+          css3Icon,
+          jsIcon,
+          reactIcon,
+          nextjsIcon,
+          nodeIcon,
+          pythonIcon,
+          framerIcon,
         ],
       },
       {
         title: "UI/UX Design",
-        icons: [<FaFigma />, <SiAdobephotoshop />],
+        icons: [figmaIcon, adobephotoshopIcon],
       },
       {
         title: "Data Analysis",
-        icons: [<FaFileExcel />],
+        icons: [fileExcelIcon],
       },
     ],
   },
@@ -235,7 +249,7 @@ const About = () => {
                   <div className="flex gap-x-4">
                     {/* icons */}
                     {item.icons?.map((icon, itemIndex) => {
-                      return <div className="text-2xl text-white">{icon}</div>;
+                      return <div className="text-2xl text-white" key={itemIndex}>{icon}</div>;
                     })}
                   </div>
                 </div>
