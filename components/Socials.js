@@ -3,6 +3,7 @@ import Link from "next/link";
 
 // icons
 import {
+  RiGithubFill,
   RiYoutubeLine,
   RiFilePdfLine,
   RiInstagramLine,
@@ -16,11 +17,14 @@ import {
 const Socials = () => {
   return (
     <div className="flex items-center gap-x-5 text-lg">
-      <Link href={""} className="hover:text-accent transition-all duration-300">
+      <Link href={"https://www.linkedin.com/in/anson-chow/"} target="_"className="hover:text-accent transition-all duration-300">
         <RiLinkedinBoxLine />
       </Link>
-      <Link href={""} className="hover:text-accent transition-all duration-300">
+      <Link href="Anson_Chow_Resume.pdf" target="_" className="hover:text-accent transition-all duration-300">
         <RiFilePdfLine />
+      </Link>
+      <Link href={"https://github.com/Anson-Chow"} target="_" className="hover:text-accent transition-all duration-300">
+        <RiGithubFill />
       </Link>
       {/* <Link href={""} className="hover:text-accent transition-all duration-300">
         <RiInstagramLine />

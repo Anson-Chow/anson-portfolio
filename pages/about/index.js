@@ -55,10 +55,10 @@ export const aboutData = [
         title: "UI/UX Design",
         icons: [figmaIcon, adobephotoshopIcon],
       },
-      {
-        title: "Data Analysis",
-        icons: [fileExcelIcon],
-      },
+      // {
+      //   title: "Data Analysis",
+      //   icons: [fileExcelIcon],
+      // },
     ],
   },
   // {

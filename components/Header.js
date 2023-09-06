@@ -20,7 +20,7 @@ const Header = () => {
               height={48}
               alt=''
               priority={true}
-              className='pt-12'
+              className='pt-12 hidden md:block'
             />
           </Link>
           {/* socials */}
