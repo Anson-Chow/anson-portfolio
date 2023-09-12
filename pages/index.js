@@ -37,8 +37,8 @@ const Home = () => {
             exit="hidden"
             className="max-w-sm xl:max-w-xl mx-auto xl:mx-0 mb-10 xl:mb-16"
           >
-            Hey I'm Anson! I'm a Fullstack Software Developer with a strong passion for building
-            web applications with great user experiences. Here's a bit more
+            Hey I&rsquo;m Anson! I&rsquo;m a Fullstack Software Developer with a strong passion for building
+            web applications with great user experiences. Here&rsquo;s a bit more
             about me.
           </motion.p>
           {/* btn */}
