@@ -7,21 +7,25 @@ export const workSlider = {
           title: "NASA Mission Control",
           technology: "JavaScript, React, Docker, AWS EC2, MongoDB, Node.js, Express.js",
           path: "/thumb1.jpg",
+          url: "https://nasa-fullstack-project.vercel.app/",
         },
         {
           title: "PromptGPT",
           technology: "HTML, CSS, JavaScript, React, Next.js, MongoDB, Node.js",
           path: "/thumb2.jpg",
+          url: "https://ai-prompt-pink.vercel.app/",
         },
         {
           title: "NFT Marketplace",
           technology: "HTML, CSS, JavaScript, React",
           path: "/thumb3.jpg",
+          url: "https://nft-marketplace-tau-rosy.vercel.app/",
         },
         {
           title: "Library E-commerce",
           technology: "HTML, CSS, JavaScript, React",
           path: "/thumb4.jpg",
+          url: "https://library-react-project.vercel.app/",
         },
       ],
     },
@@ -84,6 +88,7 @@ const WorkSlider = () => {
                     className="relative rounded-lg overflow-hidden flex items-center justify-center group"
                     key={index}
                   >
+                    <a href={image.url} target="_blank" rel="noopener noreferrer">
                     <div className="flex items-center justify-center relative overflow-hidden group">
                       {/* image */}
                       <Image src={image.path} width={500} height={300} alt="" />
@@ -104,6 +109,7 @@ const WorkSlider = () => {
                         </div>
                       </div>
                     </div>
+                  </a>
                   </div>
                 );
               })}
