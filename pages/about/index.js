@@ -125,7 +125,7 @@ const About = () => {
   const [index, setIndex] = useState(0);
   console.log(index);
   return (
-    <div className="h-full bg-primary/30 py-32 text-center xl:text-left">
+    <div className="h-full bg-primary py-12 text-center xl:text-left">
       <Circles />
       {/* avatar img */}
       <motion.div
@@ -137,8 +137,55 @@ const About = () => {
       >
         <Avatar />
       </motion.div>
-      <div className="container mx-auto h-full flex flex-col items-center xl:flex-row gap-x-6">
+
+      <div className="container mx-auto h-full flex flex-col items-left w gap-x-6">
         {/* text */}
+        <div className="flex-1 flex flex-col justify-center">
+          <motion.h2
+            variants={fadeIn("right", 0.2)}
+            initial="hidden"
+            animate="show"
+            exit="hidden"
+            className="h2 pt-12"
+          >
+            A bit <span className="text-accent">About Me.</span>{" "}
+          </motion.h2>
+          <motion.p
+            variants={fadeIn("right", 0.4)}
+            initial="hidden"
+            animate="show"
+            exit="hidden"
+            className="max-w-[1000px]  max-[400px]:text-[12px] max-[700px]:text-[13px] mx-auto xl:mx-0 mb-2 xl:mb-4 px-2 xl:px-0"
+          >
+            Two years ago, I had great grades—4.1/4.33 CGPA—but I knew I could
+            do more. Now, I’m in my final year of university with a lower CGPA
+            but with many more stories to tell.
+            <br /> <br />
+            Most recently, I became a six-figure trader. I use prop firms to
+            leverage capital. It took me over nine months of consistent screen
+            time and learning, upwards of eight hours a day. I trade from 6–10
+            a.m. every day and don’t look at charts at all—Depth of Market only.
+            A friend once called it &quot;staring at an Excel sheet.&quot;
+            <br /> <br />
+            With prop firms, I was able to limit my risk. I lost $4K USD in
+            those nine months, but in the 10th month, I made $16K USD back. The
+            following month, I made $60K USD... only for the firm that paid me
+            to go under. Yes, I lost it all. But I’ve mentally recovered and
+            continue to trade, learning from my mistake of chasing the shiniest
+            object. The rest is history.
+            <br /> <br />
+            I’m also a co-owner of a business, with our own brand selling on
+            Amazon. I continue to learn from a mentor who earns well into six
+            figures. I started during a break from trading, and I’m incredibly
+            grateful to have met him. Losing those profits was a blessing in
+            disguise.
+            <br /> <br />
+            I have so much to share, but I don’t feel like writing an essay—nor
+            would I want to bore you.
+            <br /> <br />
+          </motion.p>
+        </div>
+
         <div className="flex-1 flex flex-col justify-center">
           <motion.h2
             variants={fadeIn("right", 0.2)}
@@ -147,122 +194,78 @@ const About = () => {
             exit="hidden"
             className="h2"
           >
-            Navigating the <span className="text-accent">Fullstack</span>{" "}
-            Frontier
+            <span className="text-accent">Connect </span> With Me!
           </motion.h2>
           <motion.p
             variants={fadeIn("right", 0.4)}
             initial="hidden"
             animate="show"
             exit="hidden"
-            className="max-w-[500px] mx-auto xl:mx-0 mb-6 xl:mb-12 px-2 xl:px-0"
+            className="max-w-[1000px] max-[400px]:text-[12px] max-[700px]:text-[13px] mx-auto xl:mx-0 mb-6 xl:mb-4 px-2 xl:px-0"
           >
-            Embarking on the path of fullstack development, I&rsquo;ve been on an
-            exciting journey over the past few years. From tutorial projects to
-            building my own fullstack applications, my passion for coding
-            continues to grow. Check out some of my projects!
+            Truth be told, there were many sacrifices I decided to make in the
+            past few years, relationships being one of them. If you&apos;ve made
+            it all the way here, send me a message on Instagram or Linkedin!
+            I&apos;d love to hear your story as well and I will respond.
+            Promise.
           </motion.p>
-          {/* counters */}
-          <motion.div
-            variants={fadeIn("right", 0.6)}
-            initial="hidden"
-            animate="hidden"
-            exit="hidden"
-            className="hidden md:flex md:max-w-xl xl:max-w-none mx-auto xl:mx-0 mb-8"
-          >
-            <div className="flex flex-1 xl:gap-x-6">
-              {/* experience */}
-              <div className="relative flex-1 after:w-[1px] after:h-full after:bg-white/10 after:absolute after:top-0 after:right-0">
-                <div className="text-2xl xl:text-4xl font-extrabold text-accent mb-2">
-                  <CountUp start={0} end={10} duration={5} /> +
-                </div>
-                <div className="text-xs uppercase tracking-[1px] leading-[1.4] max-w-[100px]">
-                  Years of experience
-                </div>
-              </div>
-              {/* clients */}
-              <div className="relative flex-1 after:w-[1px] after:h-full after:bg-white/10 after:absolute after:top-0 after:right-0">
-                <div className="text-2xl xl:text-4xl font-extrabold text-accent mb-2">
-                  <CountUp start={0} end={250} duration={5} /> +
-                </div>
-                <div className="text-xs uppercase tracking-[1px] leading-[1.4] max-w-[100px]">
-                  Satisfied clients
-                </div>
-              </div>
-              {/* projects */}
-              <div className="relative flex-1 after:w-[1px] after:h-full after:bg-white/10 after:absolute after:top-0 after:right-0">
-                <div className="text-2xl xl:text-4xl font-extrabold text-accent mb-2">
-                  <CountUp start={0} end={650} duration={5} /> +
-                </div>
-                <div className="text-xs uppercase tracking-[1px] leading-[1.4] max-w-[100px]">
-                  Finished projects
-                </div>
-              </div>
-              {/* awards */}
-              <div className="relative flex-1">
-                <div className="text-2xl xl:text-4xl font-extrabold text-accent mb-2">
-                  <CountUp start={0} end={8} duration={5} /> +
-                </div>
-                <div className="text-xs uppercase tracking-[1px] leading-[1.4] max-w-[100px]">
-                  Winning awards
-                </div>
-              </div>
-            </div>
-          </motion.div>
         </div>
-        {/* info */}
-        <motion.div
-          variants={fadeIn("left", 0.4)}
-          initial="hidden"
-          animate="show"
-          exit="hidden"
-          className="flex flex-col w-full xl:max-w-[48%] h-[410px]"
-        >
-          <div className="flex gap-x-4 xl:gap-x-8 mx-auto xl:mx-0 mb-4">
-            {aboutData.map((item, itemIndex) => {
-              return (
-                <div
-                  key={itemIndex}
-                  className={`${
-                    index === itemIndex &&
-                    "text-accent after:w-[100%] after:bg-accent after:transition-all after:duration-300"
-                  }  cursor-pointer capitalize xl:text-lg relative after:w-8 after:h-[2px] after:bg-white after:absolute after:-bottom-1 after:left-0`}
-                  onClick={() => setIndex(itemIndex)}
-                >
-                  {item.title}
-                </div>
-              );
-            })}
-          </div>
-          <div className="py-2 xl:py-6 flex flex-col gap-y-2 xl:gap-y-4 items-center xl:items-start">
-            {aboutData[index].info.map((item, itemIndex) => {
-              return (
-                <div
-                  key={itemIndex}
-                  className="flex-1 flex flex-col md:flex-row max-w-max gap-x-2 items-center text-white/60"
-                >
-                  {/* title */}
-                  <div className="font-light mb-2 md:mb-0">{item.title}</div>
-                  <div className="hidden md:flex">-</div>
-                  <div>{item.stage}</div>
-                  <div className="flex gap-x-4">
-                    {/* icons */}
-                    {item.icons?.map((icon, itemIndex) => {
-                      return (
-                        <div className="text-2xl text-white" key={itemIndex}>
-                          {icon}
-                        </div>
-                      );
-                    })}
-                  </div>
-                </div>
-              );
-            })}
-          </div>
-        </motion.div>
       </div>
     </div>
   );
 };
 
 export default About;
+
+/* <>
+
+<motion.div
+variants={fadeIn("left", 0.4)}
+initial="hidden"
+animate="show"
+exit="hidden"
+className="flex flex-col w-full xl:max-w-[48%] h-[410px]"
+>
+<div className="flex gap-x-4 xl:gap-x-8 mx-auto xl:mx-0 mb-4">
+  {aboutData.map((item, itemIndex) => {
+    return (
+      <div
+        key={itemIndex}
+        className={`${
+          index === itemIndex &&
+          "text-accent after:w-[100%] after:bg-accent after:transition-all after:duration-300"
+        }  cursor-pointer capitalize xl:text-lg relative after:w-8 after:h-[2px] after:bg-white after:absolute after:-bottom-1 after:left-0`}
+        onClick={() => setIndex(itemIndex)}
+      >
+        {item.title}
+      </div>
+    );
+  })}
+</div>
+<div className="py-2 xl:py-6 flex flex-col gap-y-2 xl:gap-y-4 items-center xl:items-start">
+  {aboutData[index].info.map((item, itemIndex) => {
+    return (
+      <div
+        key={itemIndex}
+        className="flex-1 flex flex-col md:flex-row max-w-max gap-x-2 items-center text-white/60"
+      >
+        // {/* title */
+//         <div className="font-light mb-2 md:mb-0">{item.title}</div>
+//         <div className="hidden md:flex">-</div>
+//         <div>{item.stage}</div>
+//         <div className="flex gap-x-4">
+//           {/* icons */}
+//           {item.icons?.map((icon, itemIndex) => {
+//             return (
+//               <div className="text-2xl text-white" key={itemIndex}>
+//                 {icon}
+//               </div>
+//             );
+//           })}
+//         </div>
+//       </div>
+//     );
+//   })}
+// </div>
+// </motion.div>
+// </> */}

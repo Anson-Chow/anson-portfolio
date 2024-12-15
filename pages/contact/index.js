@@ -10,9 +10,12 @@ import { motion } from "framer-motion";
 // variants
 import { fadeIn } from "../../variants";
 
+
+
 const Contact = () => {
+
   return (
-    <div className="h-full bg-primary/30">
+    <div className="h-full bg-primary">
       <div className="container mx-auto py-32 text-center xl:text-left flex items-center justify-center h-full">
         {/* text & form */}
         <div className="flex flex-col w-full max-w-[700px]">
@@ -41,7 +44,7 @@ const Contact = () => {
             </div>
             <input type="text" placeholder="subject" className="input" />
             <textarea placeholder="message" className="textarea"></textarea>
-            <button className="btn rounded-full border border-white/50 max-w-[170px] px-8 transition-all duration-300 flex items-center justify-center overflow-hidden hover:border-accent group">
+            <button className="btn rounded-full border border-white/50 max-w-[170px] px-8 transition-all duration-300 flex items-center justify-center  hover:border-accent group">
               <span className="group-hover:-translate-y-[120%] group-hover:opacity-0 transition-all duration-500">
                 Let&rsquo;s talk
               </span>

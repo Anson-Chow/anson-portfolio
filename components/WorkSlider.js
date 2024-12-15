@@ -85,11 +85,11 @@ const WorkSlider = () => {
               {slide.images.map((image, index) => {
                 return (
                   <div
-                    className="relative rounded-lg overflow-hidden flex items-center justify-center group"
+                    className="relative rounded-lg  flex items-center justify-center group"
                     key={index}
                   >
                     <a href={image.url} target="_blank" rel="noopener noreferrer">
-                    <div className="flex items-center justify-center relative overflow-hidden group">
+                    <div className="flex items-center justify-center relative  group">
                       {/* image */}
                       <Image src={image.path} width={500} height={300} alt="" />
                       {/* overlay gradient */}
@@ -98,14 +98,14 @@ const WorkSlider = () => {
                       <div className="absolute bottom-0 translate-y-full group-hover:-translate-y-2 group-hover:xl:-translate-y-20 group-hover:sm:-translate-y-12 transition-all duration-300">
                         <div className="flex flex-col items-center gap-x-2 text-[8px] sm:text-[13px] md:text-[14px] lg:text-[14px] tracking-[0.2em]">
                           {/* title part 1 */}
-                          <div className="delay-100">{image.title}</div>
+                          {/* <div className="delay-100">{image.title}</div> */}
                           {/* icon and technology paragraph */}
-                          <div className="flex items-center gap-x-2">
+                          {/* <div className="flex items-center gap-x-2">
                             <p className="max-w-xs text-center">{image.technology}</p>
-                          </div>
-                            <div className="text-xl translate-y-[500%] group-hover:translate-y-0 transition-all duration-300 delay-200">
+                          </div> */}
+                            {/* <div className="text-xl translate-y-[500%] group-hover:translate-y-0 transition-all duration-300 delay-200">
                               <BsArrowRight />
-                            </div>
+                            </div> */}
                         </div>
                       </div>
                     </div>
